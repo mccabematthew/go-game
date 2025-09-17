@@ -1,0 +1,7 @@
+{
+  "props": [
+    { "type": "crate", "x": 2, "y": 0, "z": -4, "scale": 1 },
+    { "type": "tree",  "x": -3, "y": 0, "z": 6,  "scale": 1.5 }
+  ],
+  "player_spawn": { "x": 0, "y": 1.6, "z": 8 }
+}
