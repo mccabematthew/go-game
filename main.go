@@ -16,13 +16,15 @@ func main() {
     camera.Position = rl.NewVector3(0, 10, 10) // Start above and behind player
     camera.Target = rl.NewVector3(0, 0, 0)
     camera.Up = rl.NewVector3(0, 1, 0)
-    camera.Fovy = 45.0
+    camera.Fovy = 60.0
     camera.Projection = rl.CameraPerspective
 
     // --- Game Objects ---
-    world := game.NewWorld("assets/models/dungeon/obj/room-large.obj")
-    player := game.NewPlayer("assets/models/characters/obj/character-male-b.obj",
-        rl.NewVector3(0, 0, 0))
+    world := game.NewWorld("assets/models/Modular Dungeon Pack - Jan 2018/obj/Carpet.obj")
+    player := game.NewPlayer(
+        "assets/models/characters/kenney_blocky-characters_20/glb/character-j.glb",
+        rl.NewVector3(0, 0, 0),
+    )
 
     // --- Main Game Loop ---
     for !rl.WindowShouldClose() {
